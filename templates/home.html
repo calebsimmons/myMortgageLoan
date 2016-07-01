@@ -1,0 +1,41 @@
+---
+name: home
+url: /
+animationIn: fadeIn
+---
+
+<div class="grid-block main-search align-center">
+    <div class="grid-content medium-10">
+        <center>
+            <h1>Welcome to MyMortgageLoan</h1>
+            <p class="lead">Find everything you need to buy your home here.</p>
+        </center>
+        <span class="inline-label">
+            <input type="search" placeholder="Search by city or zip code">
+            <a href="#" ui-sref="results" class="button"><img zf-iconic="" icon="magnifying-glass" size="small"></a>
+        </span>
+    </div>
+</div>
+
+<div class="grid-block">
+    <div class="grid-content large-6">
+        <h3>Shop for your new home!</h3>
+        <p>We'll help you find the perfect home! MyMortgageLoan is your tool to discover and save homes that meet your budget. Talk today with your Loan Officer to discuss what you can afford, and how to plan for the costs of home ownership.</p>
+    </div>
+    <div class="grid-content large-6">
+        <h3>Request &amp; print your prequalification letter</h3>
+        <p>Your prequalifcation letter is an important document to show to sellers to say that you are a qualified and serious borrower. MyMortgageLoan allows you to customize your letter to a listing that meets your budget. Wondering if you could qualify for a bit more on the Loan? MyMortgageLoan lets you get in touch with your Loan Officer quickly so that they can advise and approve a new max loan amount.</p>
+    </div>
+</div>
+
+<div class="grid-block">
+    <div class="grid-content">
+        <hr>
+        <h4>Featured Listings</h4>
+        <p>View the latest listings that meet your budget.</p>
+        <p><a ui-sref="home.featured" class="button">View featured listings in your area</a></p>
+
+        <!-- featured listings view -->
+        <div ui-view></div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+---
+name: myApplication
+url: /myApplication
+animationIn: fadeIn
+---
+<div class="grid-block vertical">
+    <div class="grid-content">
+        <h1>Your Mortgage Application Status</h1>
+        <hr>
+        <h3 class="subheader">Here is what you need to know about your application:</h3>
+    </div>
+    <div class="grid-content">
+        <section class="block-list">
+        <header>Document Checklist:</header>
+        <ul>
+            <li>
+                <input type="checkbox" id="drivers-license">
+                <label for="drivers-license">Copy of driver’s license</label>
+            </li>
+            <li>
+                <input type="checkbox" id="pay-stubs">
+                <label for="pay-stubs">30 days most recent pay stubs</label>
+            </li>
+            <li>
+                <input type="checkbox" id="etc">
+                <label for="etc">etc</label>
+            </li>
+        </ul>
+        </section>
+    </div>
+    <div class="grid-content">
+        <a class="button" href="#" zf-open="upload-documents">Upload Documents</a>
+    </div>
+    <hr>
+    <div class="grid-content">
+        <p>
+            Make adjustments to your prequalification letter.
+        </p>
+        <form>
+            <div class="grid-block">
+                <div class="small-12 medium-6 grid-content">
+                    <label>
+                        Purchase Price
+                        <input type="range">
+                    </label>
+                </div>
+            </div>
+            <div class="grid-block">
+                <div class="small-12 medium-6 grid-content">
+                    <label>
+                        Down Payment
+                        <input type="range" name="down-payment">
+                    </label>
+                </div>
+            </div>
+            <a class="button" href="#" zf-open="print-letter">Print Letter</a>
+        </form>
+    </div>
+</div>
+
+<div ng-include="'partials/upload-documents.html'"></div>
+<div ng-include="'partials/print-letter.html'"></div>
